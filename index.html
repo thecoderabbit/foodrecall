@@ -1,0 +1,72 @@
+<DOCTYPE html>
+    <html lang="en" dir="ltr">
+        <head>
+            <title>My Food Recall</title>
+
+            <meta charset="utf-8">
+            <script src="https://kit.fontawesome.com/30a6394f87.js" crossorigin="anonymous"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+            <meta http-equiv="Pragma" content="no-cache">
+            <meta http-equiv="Expires" content="0">
+
+            <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+            <link rel="stylesheet" type="text/css" href="css/style.css?version=1.0.0"/>
+
+            <script src="js/barcode-scanner-io.js?v=1.0.0" defer></script>
+
+            <script src="js/phone-scanner.js?v=1.0.0" defer></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+            
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header-container">
+            <div class="header">
+                <div class="header-col-1">
+                    <a href="index.html" class="logo">My Food Recall</a>
+                </div>
+                <div class="header-col-2">
+                    <button type="button" onclick="scanUpcCode()"><i class="fa-solid fa-barcode"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="barcode-search-box">
+            <form id="barcode-form" class="barcode-form">
+                 <input type="text" id="barcode-input" placeholder="Try this UPC 043695075113" required>
+                <button type="submit" class="barcode-input-submit">Check UPC</button>
+              </form>
+        </div>
+
+        <div class="hs-content-container">
+            <div class="hs-content">
+                <div class="hs-content-col">
+                        <div id="image-container"></div>
+                      <br />
+                      <div id="result"></div>
+                      <br />
+                      <div id="recalls"></div>
+                      <br />
+                      <div id="productNameContainer"></div>
+                      <br />
+                      <div class="video-container"></div>
+                      <br />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
