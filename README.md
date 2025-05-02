@@ -4,7 +4,7 @@ A food recall app that uses APIs to find food recalls issued by the FDA.
 
 <h2>Third Party libraries used for phone scanner</h2>
 quagga.js
-
-Third Party APIs used for product information
+<br>
+<h2>Third Party APIs used for product information</h2>
 openfoodfacts.org
 fda.gov
